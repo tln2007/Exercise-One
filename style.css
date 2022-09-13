@@ -55,24 +55,88 @@ section.box-model-section {
     line-height: 1.5;
 }
 
+.flex-box-section {
+    background-color: #F1D3CA;
+}
+
+.interior-flex {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.interior-flex > div {
+    background-color: #FF9371;
+    border: 10px solid #7D260B;
+}
+
+.interior-flex--top {
+    flex-basis: 100%;
+    padding: 32px;
+    margin-bottom: 40px;
+}
+
+.interior-flex--top > div {
+    align-items: center;
+    background-color: #FFECE5;
+    border: 5px solid #DD4414;
+    display: flex;
+    height: 170px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 825px;
+    width: 100%;
+}
+
+.interior-flex--top > div > h1 {
+    margin: 0;
+}
+
+.interior-flex--horizontal, .interior-flex--vertical  {
+    display: flex;
+    flex-basis: 48%;
+    height: 324px;
+    padding: 20px;
+}
+
+.interior-flex--horizontal > div, .interior-flex--vertical > div {
+    background-color: #FFECE5;
+    border: 5px solid #DD4414;
+    flex-basis: 33%;
+}
+
+.interior-flex--horizontal > div {
+    margin-right: 20px;
+}
+
+.interior-flex--vertical > div {
+    margin-bottom: 20px;
+}
+
+.interior-flex--horizontal > div:last-of-type, .interior-flex--vertical > div:last-of-type {
+    margin: 0;
+}
+
+.interior-flex--vertical {
+    flex-direction: column;
+}
+
 .heading-section-interior {
     background-color: #F1CAF0;
     padding: 40px;
 }
 
-.heading-section-interior h1 {
+.heading-section-interior h1, h3 {
     color: #6C0468;
+    font-weight: 700;
     font-size: 64px;
+    line-height: 74px;
 }
 
 .heading-section-interior h2 {
     color: #6C0468;
     font-size: 40px;
-}
-
-.heading-section-interior h3 {
-    color: #6C0468;
-    font-size: 64px;
 }
 
 .heading-section-interior p {
@@ -85,4 +149,35 @@ section.box-model-section {
     font-size: 36px;
 }
 
+.positioning-section {
+    background-color: #CAD7F1;
+}
 
+.positioning-section .interior {
+    background-color: #85C4FF;
+    border-color: #0E3F9E;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.positioning-section h1 {
+    font-size: 64px;
+}
+
+.circle, .square {
+    background-color: #4480F4;
+    border: 10px solid #0E3F9E;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.circle.circle-one {
+    bottom: 48px;
+
+}
