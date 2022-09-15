@@ -28,7 +28,6 @@ header nav a {
     padding: 5px;
     /*no underline*/
     text-decoration: none;
-    
 }
 
 /*pseudoselectors*/
@@ -60,22 +59,23 @@ section.box-model-section {
 
 .box-model-interior h1 {
     color: black;
-    font-size: 50px;
+    font-size: 64px;
     font-weight: 700;
+    line-height: 1.5;
 }
 
 .box-model-interior h2 {
     color: black;
     font-size: 23px;
     font-weight: 400;
-    line-height: 1.5;
+  
 }
 
 .box-model-interior p {
     color: black;
     font-size: 23px;
     font-weight: bold;
-    line-height: 1.5;
+
 }
 
 .flex-box-section {
@@ -89,7 +89,7 @@ section.box-model-section {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1200px;
-    padding: 30px;
+    padding: 0;
     width: 100%;
 }
 
@@ -109,6 +109,7 @@ section.box-model-section {
     background-color: #FFECE5;
     border: 5px solid #DD4414;
     display: flex;
+    font-size: 50px;
     height: 170px;
     justify-content: center;
     margin: 0 auto;
@@ -149,8 +150,20 @@ section.box-model-section {
     flex-direction: column;
 }
 
-.heading-section-interior {
+.heading-section {
     background-color: #F1CAF0;
+}
+
+.heading-section-interior {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 0 40px 0;
+    width: 100%;
+}
+
+.heading-section-interior h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 10px;
 }
 
 .heading-section-interior h1, h3 {
@@ -177,7 +190,6 @@ section.box-model-section {
 
 .positioning-section {
     background-color: #CAD7F1;
-    
 }
 
 .positioning-section .interior {
@@ -215,20 +227,49 @@ section.box-model-section {
 
 .simple-javascript-section {
     background-color: #FAEFD3;
+
 }
 
 .simple-javascript-section .interior {
-    border-color: #644904;
+    border: 10px solid #644904;
     color: #644904;
+    height: 300px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px;
+    width: 100%;
+}
+
+.simple-javascript-section h1 {
+    font-size: 64px;
+    font-weight: 700;
 }
 
 .counter-button-wrapper {
     display: flex;
+    align-items: center;
 }
 
 .counter-button-wrapper p {
     font-size: 64px;
     font-weight: 700;
     line-height: 74px;
-    margin: 0 40px 
+    margin: 0 40px 0 0;
+}
+
+footer {
+    background-color: #FFC3C3;
+    
+}
+
+.footer-interior {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 24px;
+    font-weight: 700;
 }
