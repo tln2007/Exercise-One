@@ -12,9 +12,32 @@ header {
 }
 
 header nav {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
 }
 
+/*anchor tag css (links on header)*/
 header nav a {
+    color: black;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 5px;
+    /*no underline*/
+    text-decoration: none;
+    
+}
+
+/*pseudoselectors*/
+header nav a:last-of-type {
+    margin-right: 0;
+}
+
+header nav a:first-of-type {
+    margin-left: 0;
 }
 
 section.section-element {
@@ -64,6 +87,10 @@ section.box-model-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px;
+    width: 100%;
 }
 
 .interior-flex > div {
@@ -124,13 +151,12 @@ section.box-model-section {
 
 .heading-section-interior {
     background-color: #F1CAF0;
-    padding: 40px;
 }
 
 .heading-section-interior h1, h3 {
     color: #6C0468;
-    font-weight: 700;
     font-size: 64px;
+    font-weight: 700;
     line-height: 74px;
 }
 
@@ -151,14 +177,19 @@ section.box-model-section {
 
 .positioning-section {
     background-color: #CAD7F1;
+    
 }
 
 .positioning-section .interior {
     background-color: #85C4FF;
-    border-color: #0E3F9E;
+    border: 10px solid #0E3F9E;
     height: 600px;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px;
+    width: 100%;
 }
 
 .positioning-section h1 {
@@ -180,4 +211,24 @@ section.box-model-section {
 .circle.circle-one {
     bottom: 48px;
 
+}
+
+.simple-javascript-section {
+    background-color: #FAEFD3;
+}
+
+.simple-javascript-section .interior {
+    border-color: #644904;
+    color: #644904;
+}
+
+.counter-button-wrapper {
+    display: flex;
+}
+
+.counter-button-wrapper p {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    margin: 0 40px 
 }
